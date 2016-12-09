@@ -1,11 +1,12 @@
 package com.sage.collections
 
-import org.scalatest.{FlatSpec, Matchers}
+import com.sage.BaseSpec
+
 
 import collection.mutable.Map
 import scala.collection.mutable.ListBuffer
 
-class MutableCollectionSpec extends FlatSpec with Matchers{
+class MutableCollectionSpec extends BaseSpec{
   "A Demo of puts and gets for an mutable map" should "be demostrated below " in {
     val mutableMap = Map[String, Any]("name" -> "Mark")
     mutableMap("name") should be ("Mark")

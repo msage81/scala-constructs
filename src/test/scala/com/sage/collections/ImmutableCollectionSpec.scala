@@ -1,8 +1,8 @@
 package com.sage.collections
 
-import org.scalatest.{FlatSpec, Matchers}
+import com.sage.BaseSpec
 
-class ImmutableCollectionSpec extends FlatSpec with Matchers{
+class ImmutableCollectionSpec extends BaseSpec{
   "A Demo of 'puts' and gets for an immutable map" should "be demostrated below " in {
     val immutableMap = Map("name" -> "Mark")
     immutableMap("name") should be ("Mark")
